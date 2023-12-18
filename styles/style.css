@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&family=Mukta&family=Rubik+Doodle+Shadow&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  margin: 0px 30px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.Navbar nav {
+  font-family: "Rajdhani", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: bold;
+}
+
+.Navbar nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 0px 50px;
+}
+
+.Navbar nav ul li {
+  padding: 3px 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.Navbar nav ul li:hover {
+  color: rgb(255, 0, 204);
+  transition: all 0.5s;
+}
+
+.auth button {
+  margin: 10px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: rgb(220, 17, 196);
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.auth button:hover {
+  background-color: rgb(178, 51, 161);
+  transition: all 0.5s;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: url("/images/Fitness.png") no-repeat center/cover;
+  z-index: -1;
+}
+
+.box {
+  width: 50%;
+  height: calc(100vh - 56px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.box h1 {
+  font-size: 2rem;
+}
+
+.box h1 span {
+  color: rgb(255, 0, 204);
+}
+
+.box p {
+  padding: 0px 50px;
+  text-align: center;
+}
+
+.box p span {
+  font-weight: bold;
+  color: rgb(255, 0, 204);
+}
+
+.box img {
+  width: 100%;
+  height: calc(100vh - 56px);
+}
+
+.box button {
+  margin: 10px;
+  padding: 5px 15px;
+  background-color: rgb(255, 0, 204);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.box button:hover {
+  cursor: pointer;
+  background-color: rgb(178, 51, 161);
+  transition: all 0.5s;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 10px;
+}
+
+.scroll img {
+  filter: invert();
+  width: 100px;
+}
+
+.Services {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Services h1 {
+  font-family: "Rajdhani", sans-serif;
+  padding: 20px;
+}
+
+.Services h1 span {
+  color: rgb(255, 0, 204);
+}
+
+.Services > p {
+  width: 60%;
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  margin: 20px;
+}
+
+.service-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cards {
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  background-color: rgb(30, 29, 29);
+  border: 1px solid gray;
+  border-radius: 25px;
+  font-family: "Rajdhani", sans-serif;
+  transition: all 0.5s;
+}
+
+.cards h2 {
+  text-align: center;
+  margin: 10px;
+}
+
+.cards img {
+  display: block;
+  margin: 10px auto;
+  padding: 30px;
+  box-shadow: 0px 0px 10px black;
+  filter: invert();
+  width: 100px;
+}
+
+.cards:hover {
+  box-shadow: 0px 0px 20px rgb(255, 0, 221);
+  transition: all 0.5s;
+}
+
+.Proof {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.Proof h1 span {
+  color: rgb(255, 0, 221);
+}
+
+.Proof h1 {
+  padding: 20px;
+  text-align: center;
+}
+
+.points-card {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.point-card img {
+  width: 100px;
+}
+
+.point-card:nth-child(even) {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 50px;
+}
+
+.point-card:nth-child(odd) {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.testimonial {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.testimonial > h1 {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.testimonial > h1 span {
+  color: rgb(255, 0, 221);
+}
+
+.testimonial-slider {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.testimonial-slider button {
+  margin: 10px;
+  padding: 5px 15px;
+  background-color: rgb(255, 0, 204);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.testimonial-slider button:hover {
+  cursor: pointer;
+  background-color: rgb(178, 51, 161);
+  transition: all 0.5s;
+}
+
+.slider {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px white;
+}
+
+.slide {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: none;
+  object-fit: cover;
+}
+
+.slide img {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide:nth-child(2) {
+  z-index: -1;
+}
+
+.slide:nth-child(3) {
+  z-index: -3;
+}
+
+.said {
+  padding: 20px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.said::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.said > h1 {
+  text-align: center;
+  color: rgb(255, 0, 221);
+}
+
+.toggle {
+  display: block;
+}
+
+.Contact {
+  position: relative;
+  font-family: "Rajdhani", sans-serif;
+  min-height: 100vh;
+}
+
+.Contact h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.Contact > h1 span {
+  color: rgb(255, 0, 221);
+}
+
+.Contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://cdn.pixabay.com/photo/2018/09/24/10/19/system-3699542_1280.jpg")
+    no-repeat center/cover;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.contact-cards {
+  display: flex;
+}
+
+.contact-card {
+  width: 50%;
+  height: calc(100vh - 56px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.contact-card img {
+  width: 60%;
+}
+
+.contact-card form {
+  width: 70%;
+}
+
+.contact-card form label {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+
+.contact-card form label input {
+  padding: 5px 10px;
+}
+
+textarea {
+  padding: 5px 10px;
+}
+
+.contact-card form button {
+  display: block;
+  margin: 10px auto;
+  padding: 5px 15px;
+  background-color: rgb(255, 0, 204);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.contact-card form button:hover {
+  cursor: pointer;
+  background-color: rgb(178, 51, 161);
+  transition: all 0.5s;
+}
+
+@media (max-width: 640px) {
+  .Navbar nav {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  .point-card:nth-child(odd) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .point-card:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-cards {
+    flex-direction: column;
+  }
+
+  .contact-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  #previous {
+    display: none;
+  }
+
+  #next {
+    display: none;
+  }
+
+  .Navbar nav ul {
+    margin: 0px;
+  }
+
+  .cards {
+    padding: 10px;
+  }
+}
