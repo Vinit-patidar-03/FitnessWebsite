@@ -431,7 +431,7 @@ textarea {
   transition: all 0.5s;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 685px) {
   .Navbar nav {
     flex-direction: column;
   }
@@ -456,6 +456,7 @@ textarea {
 
   .contact-card {
     width: 100%;
+    height: auto;
   }
 }
 
